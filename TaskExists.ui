@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>TaskExists</class>
+ <widget class="QMainWindow" name="TaskExists">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>1084</width>
-    <height>816</height>
+    <height>625</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,7 +19,7 @@
   <property name="maximumSize">
    <size>
     <width>1084</width>
-    <height>816</height>
+    <height>625</height>
    </size>
   </property>
   <property name="font">
@@ -39,7 +39,7 @@
 border-color: rgb(170, 170, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="frame">
+   <widget class="QFrame" name="TitleBack">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -57,7 +57,7 @@ border-color: rgb(170, 170, 255);</string>
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QFrame" name="frame_2">
+    <widget class="QFrame" name="TitleBack2">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -76,7 +76,7 @@ background-color: rgb(255, 255, 255);</string>
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="Title">
       <property name="geometry">
        <rect>
         <x>430</x>
@@ -97,24 +97,32 @@ background-color: rgb(255, 255, 255);</string>
      </widget>
     </widget>
    </widget>
-   <widget class="QPlainTextEdit" name="plainTextEdit">
+   <widget class="QPlainTextEdit" name="SearchBox">
     <property name="geometry">
      <rect>
       <x>290</x>
       <y>80</y>
       <width>500</width>
-      <height>31</height>
+      <height>62</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
+    <property name="plainText">
+     <string/>
+    </property>
    </widget>
-   <widget class="QPushButton" name="okButton">
+   <widget class="QPushButton" name="OKBtn">
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>130</y>
+      <y>190</y>
       <width>91</width>
       <height>71</height>
      </rect>
@@ -126,10 +134,34 @@ background-color: rgb(255, 255, 255);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(91, 155, 213);</string>
+     <string notr="true">background-color: rgb(91, 155, 213);
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>OK</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ViewTasksBtn">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>510</y>
+      <width>182</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(91, 155, 213);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>View Tasks</string>
     </property>
    </widget>
   </widget>
