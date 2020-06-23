@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>TaskExists</class>
- <widget class="QMainWindow" name="TaskExists">
+ <class>TaskNotFound</class>
+ <widget class="QMainWindow" name="TaskNotFound">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -79,7 +79,7 @@ background-color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="Title">
       <property name="geometry">
        <rect>
-        <x>380</x>
+        <x>410</x>
         <y>10</y>
         <width>271</width>
         <height>40</height>
@@ -92,15 +92,15 @@ background-color: rgb(255, 255, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>This task already exists!</string>
+       <string>Task not found!</string>
       </property>
      </widget>
     </widget>
    </widget>
-   <widget class="QPushButton" name="DeleteBtn">
+   <widget class="QPushButton" name="AddWinBtn">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>460</x>
       <y>160</y>
       <width>161</width>
       <height>71</height>
@@ -117,30 +117,7 @@ background-color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Delete Task</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="ViewCurrentBtn">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>160</y>
-      <width>161</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Calibri</family>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(91, 155, 213);
-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>View Info</string>
+     <string>Add a Task</string>
     </property>
    </widget>
    <widget class="QPushButton" name="CancelBtn">
