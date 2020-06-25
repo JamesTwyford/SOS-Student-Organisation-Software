@@ -175,11 +175,11 @@ class Ui_AddTask(object):
         self.label3.setText(_translate("AddTask", "/"))
 
 
-if __name__ == "__main__":
+def constructAddTask():
     import sys
     app = QtWidgets.QApplication(sys.argv)
     AddTask = QtWidgets.QMainWindow()
     ui = Ui_AddTask()
     ui.setupUi(AddTask)
     AddTask.show()
-    sys.exit(app.exec_())
+    app.exec_()

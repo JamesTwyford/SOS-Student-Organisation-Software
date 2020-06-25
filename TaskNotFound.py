@@ -87,11 +87,11 @@ class Ui_TaskNotFound(object):
         self.CancelBtn.setText(_translate("TaskNotFound", "Cancel"))
 
 
-if __name__ == "__main__":
+def constructTaskNotFound():
     import sys
     app = QtWidgets.QApplication(sys.argv)
     TaskNotFound = QtWidgets.QMainWindow()
     ui = Ui_TaskNotFound()
     ui.setupUi(TaskNotFound)
     TaskNotFound.show()
-    sys.exit(app.exec_())
+    app.exec_()

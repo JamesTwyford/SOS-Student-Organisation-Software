@@ -8,7 +8,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import sys
 
 class Ui_TaskExists(object):
     def setupUi(self, TaskExists):
@@ -87,7 +87,6 @@ class Ui_TaskExists(object):
 
         self.retranslateUi(TaskExists)
         QtCore.QMetaObject.connectSlotsByName(TaskExists)
-
     def retranslateUi(self, TaskExists):
         _translate = QtCore.QCoreApplication.translate
         TaskExists.setWindowTitle(_translate("TaskExists", "MainWindow"))
@@ -96,12 +95,10 @@ class Ui_TaskExists(object):
         self.ViewCurrentBtn.setText(_translate("TaskExists", "View Info"))
         self.CancelBtn.setText(_translate("TaskExists", "Cancel"))
 
-
-if __name__ == "__main__":
-    import sys
+def constructTaskExists():
     app = QtWidgets.QApplication(sys.argv)
     TaskExists = QtWidgets.QMainWindow()
     ui = Ui_TaskExists()
     ui.setupUi(TaskExists)
     TaskExists.show()
-    sys.exit(app.exec_())
+    app.exec_()
