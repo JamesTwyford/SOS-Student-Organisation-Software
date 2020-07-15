@@ -95,7 +95,7 @@ class Ui_MainWindow(object):
         self.ViewTasksBtn.setText(_translate("MainWindow", "View Tasks"))
 
     def jamesFunction(self):
-            print("NowI hav access")
+        print("Now I have access")
 
 def constructMainWindow():
     app = QtWidgets.QApplication(sys.argv)

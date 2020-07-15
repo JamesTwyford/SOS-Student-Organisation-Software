@@ -1,4 +1,5 @@
 from MainWindow import Ui_MainWindow
+from MainWindow import constructMainWindow
 from TaskExists import Ui_TaskExists
 from TaskExists import constructTaskExists
 from TaskNotFound import Ui_TaskNotFound
@@ -16,9 +17,10 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 def subMainWindow():
     app = QtWidgets.QApplication(sys.argv)
-    winMainWindow = QtWidgets.QMainWindow()
-    uiMainWindow = MainWindow.Ui_MainWindow()
-    uiMainWindow.setupUi(winMainWindow)
-    winMainWindow.show()
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    app.exec_()
 
 subMainWindow()
