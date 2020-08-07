@@ -90,7 +90,7 @@ for i in range(1, len(TimeList)): #repeat the amount of times = to the number of
                 CSVWriteFunc(i, j, 0.5)
 
 if int_TimeNeeded > 0:
-    print("my friend, you have fucked up")
+    print("my friend, you have messed up")
 
 
 
