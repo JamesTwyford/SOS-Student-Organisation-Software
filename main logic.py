@@ -29,16 +29,18 @@ with open("Time Allocations.csv") as file:
 #The function that writes the new times to the CSV
 def CSVWriteFunc(y, x, TimeNeeded):
     NewTimeList = TimeList
+    #j begins at 0 but for this code to work it needs to be between 1 - 14 instead of 0 - 13
     x += 1
+    #The new time allocated is added to that specific part of the list
     NewTimeList[y][x] = float(NewTimeList[y][x]) + TimeNeeded
+    #This new section is then copied through to the csv
     with open("Time Allocations.csv", 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(NewTimeList)
 
-# here we GOOOOO
 flt_Temp = 0
 
-# BIG Note : When other tasks are inputted the HoursLeft system will have to be overhauled slightly to add the 
+# BIG Note : When other tasks are inputted the HoursLeft system will have to be overhauled slightly to add up the 
 # hours of all the tasks. 
 
 for i in range(1, len(TimeList)): #repeat the amount of times = to the number of tasks - i is the task i am on
@@ -116,12 +118,3 @@ for i in range(1, len(TimeList)): #repeat the amount of times = to the number of
 
 if int_TimeNeeded > 0:
     print("my friend, you have messed up")
-
-
-
-
-
-
-
-
-
