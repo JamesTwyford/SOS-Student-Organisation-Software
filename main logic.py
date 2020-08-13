@@ -40,18 +40,14 @@ def CSVWriteFunc(y, x, TimeNeeded):
 
 flt_Temp = 0
 
-# BIG Note : When other tasks are inputted the HoursLeft system will have to be overhauled slightly to add up the 
-# hours of all the tasks. 
-
 for i in range(1, len(TimeList)): #repeat the amount of times = to the number of tasks - i is the task i am on
     HoursLeft = []
-    int_TimeNeeded = int(TaskList[i*3]) #Time needed on the first task || This part needs elegancy when intergrated
+    int_TimeNeeded = int(TaskList[i*3]) #Time needed on the first task
     for m in range(1, 15): # m is determining the hours left
         flt_Temp = float(TimeList[i][m])
         HoursLeft.append(2 - flt_Temp)
         flt_Temp = 0
     for j in range(0, 14):
-        #Somewhere here i need to add a check to make sure the csv isnt too clogged for the time needed to fill it to the maximum
         if int_TimeNeeded == 0:
             pass
         else:

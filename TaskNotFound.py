@@ -88,7 +88,6 @@ class Ui_TaskNotFound(object):
 
 
 def constructTaskNotFound():
-    import sys
     app = QtWidgets.QApplication(sys.argv)
     TaskNotFound = QtWidgets.QMainWindow()
     ui = Ui_TaskNotFound()

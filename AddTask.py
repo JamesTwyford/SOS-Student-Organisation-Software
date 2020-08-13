@@ -176,7 +176,6 @@ class Ui_AddTask(object):
 
 
 def constructAddTask():
-    import sys
     app = QtWidgets.QApplication(sys.argv)
     AddTask = QtWidgets.QMainWindow()
     ui = Ui_AddTask()

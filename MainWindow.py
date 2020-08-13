@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'mainwindow.ui'
+# Form implementation generated from reading ui file 'MainWindow.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.2
 #
@@ -8,7 +8,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-import sys
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -94,14 +94,11 @@ class Ui_MainWindow(object):
         self.OKBtn.setText(_translate("MainWindow", "OK"))
         self.ViewTasksBtn.setText(_translate("MainWindow", "View Tasks"))
 
-    def jamesFunction(self):
-        print("Now I have access")
 
-def constructMainWindow():
+if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
-    app.exec_()
-
+    sys.exit(app.exec_())
